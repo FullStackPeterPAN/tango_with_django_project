@@ -1,7 +1,7 @@
 from django.contrib import admin
 from rango.models import Category, Page
-from .models import Choice, Question
-
+from rango.models import Choice, Question
+from rango.models import UserProfile
 
 # Add in this class to customise the Admin Interface
 class CategoryAdmin(admin.ModelAdmin):
@@ -32,4 +32,4 @@ class QuestionAdmin(admin.ModelAdmin):
     
 
 admin.site.register(Question, QuestionAdmin)
-
+admin.site.register(UserProfile)
